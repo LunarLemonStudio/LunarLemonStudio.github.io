@@ -1,24 +1,23 @@
 .container {
-    width: 90%;
-    max-width: $container-max-width;
-    margin: 0 auto;
+  width: 90%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+  gap: $grid-gap;
+}
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    grid-column: span $i;
   }
-  
-  .row {
-    display: grid;
-    grid-template-columns: repeat($grid-columns, 1fr);
-    gap: $grid-gap;
+}
+
+@media (max-width: 768px) {
+  .col-4 {
+    grid-column: span $grid-columns;
   }
-  
-  @for $i from 1 through $grid-columns {
-    .col-#{$i} {
-      grid-column: span $i;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .col-4 {
-      grid-column: span $grid-columns;
-    }
-  }
-  
+}

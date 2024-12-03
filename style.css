@@ -120,6 +120,39 @@ footer {
   text-align: center;
 }
 
+header {
+  background-color: #F7EFD8;
+  padding: 1rem 0;
+}
+header .logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.global-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.global-nav li {
+  margin-left: 1rem;
+}
+.global-nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #B5C49B;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+.global-nav a:hover {
+  background-color: #9db17b;
+}
+
 .button-contact {
   font-size: 2rem;
   color: #B5C49B;

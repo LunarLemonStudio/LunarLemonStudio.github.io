@@ -11,52 +11,142 @@
 <body>
   <header>
     <div class="container">
-      <a href="#contact" class="button-contact"><i class="fas fa-envelope" aria-label="お問い合わせ"></i></a>
-      <div class="profile">
-        <h1 class="site-title">Web Designer <span>Lunar Lemon</span></h1>
-        <img src="Fox.png" alt="プロフィール写真" width="200" height="200" class="profile-icon">
-        <p>Webデザイナー、ルナといいます。現在Web制作について勉強中です。イラスト・音楽・動画制作などのクリエイティブな作業を好み、フルスタックエンジニアを目指します。</p>
+      <div class="row">
+        <div class="col-4">
+          <img src="Logo_Trim.png" alt="Lunar Lemon Logo" class="logo">
+        </div>
+        <nav class="col-8">
+          <ul class="global-nav">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skill Set</a></li>
+            <li><a href="#works">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
 
   <main>
-    <section id="skills">
+    <section id="about">
       <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-container">
-          <div class="skill-box">
-            <i class="fas fa-laptop-code" aria-hidden="true"></i>
-            <h3>Web</h3>
-            <p>HTML/CSSでのコーディングができます。JavaScript、PHP、WordPressも現在勉強中です。</p>
-          </div>
-          <div class="skill-box">
-            <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            <h3>Writing</h3>
-            <p>ライティングができます。過去にブランディング会社でライターとして記事を執筆していた経験もあります。</p>
-          </div>
-          <div class="skill-box">
-            <i class="fas fa-music" aria-hidden="true"></i>
-            <h3>Music</h3>
-            <p>即興でのピアノ演奏が得意です。ピアノを独学で勉強しています。</p>
+        <div class="row">
+          <div class="col-12">
+            <h2>About me</h2>
+            <div class="profile">
+              <img src="Fox.png" alt="プロフィール写真" width="200" height="200" class="profile-icon">
+              <p>Webデザイナー、ルナといいます。現在Web制作について勉強中です。イラスト・音楽・動画制作などのクリエイティブな作業を好み、フルスタックエンジニアを目指します。</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Skills</h2>
+            <div class="skills-container">
+              <div class="skill-box col-4">
+                <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                <h3>Web</h3>
+                <p>HTML/CSSでのコーディングができます。JavaScript、PHP、WordPressも現在勉強中です。</p>
+              </div>
+              <div class="skill-box col-4">
+                <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                <h3>Writing</h3>
+                <p>ライティングができます。過去にブランディング会社でライターとして記事を執筆していた経験もあります。</p>
+              </div>
+              <div class="skill-box col-4">
+                <i class="fas fa-music" aria-hidden="true"></i>
+                <h3>Music</h3>
+                <p>即興でのピアノ演奏が得意です。ピアノを独学で勉強しています。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Work</h2>
+            <div class="works-container">
+              <div class="work-item col-4">
+                <img src="work1.jpg" alt="作品1">
+                <div class="work-details">
+                  <h3>プロジェクト名</h3>
+                  <p>簡単な説明</p>
+                </div>
+              </div>
+              <div class="work-item col-4">
+                <img src="work2.jpg" alt="作品2">
+                <div class="work-details">
+                  <h3>プロジェクト名</h3>
+                  <p>簡単な説明</p>
+                </div>
+              </div>
+              <div class="work-item col-4">
+                <img src="work3.jpg" alt="作品3">
+                <div class="work-details">
+                  <h3>プロジェクト名</h3>
+                  <p>簡単な説明</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container">
-        <h2>Contact</h2>
-        <ul>
-          <li><a href="mailto:tacochi.chichan@gmail.com"><i class="fas fa-envelope" aria-label="メール"></i></a></li>
-          <li><a href="https://github.com/Tacochichi"><i class="fab fa-github" aria-label="GitHub"></i></a></li>
-          <li><a href="https://twitter.com/Love_me_Tacos"><i class="fab fa-twitter" aria-label="Twitter"></i></a></li>
-        </ul>
+        <div class="row">
+          <div class="col-12">
+            <h2>Contact</h2>
+            <div class="contact-container">
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="name">お名前</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">メールアドレス</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">メッセージ</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">送信</button>
+              </form>
+              <div class="contact-links">
+                <ul>
+                  <li><a href="mailto:tacochi.chichan@gmail.com"><i class="fas fa-envelope" aria-label="メール"></i></a></li>
+                  <li><a href="https://github.com/Tacochichi"><i class="fab fa-github" aria-label="GitHub"></i></a></li>
+                  <li><a href="https://twitter.com/Love_me_Tacos"><i class="fab fa-twitter" aria-label="Twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <small>&copy; Lunar Lemon Studio, All Rights Reserved.</small>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <small>&copy; Lunar Lemon Studio, All Rights Reserved.</small>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

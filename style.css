@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+@media (max-width: 768px) {
+  .col-4 {
+    grid-column: span 12;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #4c4c4c;
+  background-color: #fdfcf6;
+}
+
+a {
+  text-decoration: none;
+  color: #14c0c9;
+  transition: color 0.3s ease;
+}
+a:hover, a:focus {
+  color: #0f949b;
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  font-family: "Abel", sans-serif;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: #F7EFD8;
+  padding: 2rem 0;
+}
+
+.profile {
+  clear: both;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#skills {
+  background-color: #E9D4A7;
+  padding: 6rem 0;
+}
+
+#contact {
+  background-color: #F7EFD8;
+  padding: 6rem 0;
+}
+
+footer {
+  background-color: #E9D4A7;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.button-contact {
+  font-size: 2rem;
+  color: #B5C49B;
+  border: 2px solid #B5C49B;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin: 1rem;
+}
+
+.site-title {
+  font-size: 1.8rem;
+}
+.site-title span {
+  font-size: 4.2rem;
+  color: #B5C49B;
+  display: block;
+}
+
+.profile-icon {
+  border-radius: 50%;
+  margin: 3rem auto;
+  display: block;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  background-color: #fdfcf6;
+  border-radius: 4px;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+.skill-box i {
+  font-size: 4.5rem;
+  color: #fff;
+  background-color: #B5C49B;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+#contact ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 0;
+  list-style: none;
+}
+#contact ul a {
+  font-size: 2.8rem;
+  color: #fff;
+  background-color: #B5C49B;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+#contact ul a:hover {
+  background-color: #E9D4A7;
+}/*# sourceMappingURL=style.css.map */

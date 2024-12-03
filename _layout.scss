@@ -1,0 +1,27 @@
+header {
+  background-color: $main-color;
+  padding: 2rem 0;
+}
+
+.profile {
+  clear: both;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#skills {
+  background-color: $sub-color;
+  padding: 6rem 0;
+}
+
+#contact {
+  background-color: $main-color;
+  padding: 6rem 0;
+}
+
+footer {
+  background-color: $sub-color;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}

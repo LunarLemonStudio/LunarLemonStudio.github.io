@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: #fdfcf6;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  transition: color 0.3s ease;
+
+  &:hover, &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Abel', sans-serif;
+  text-transform: uppercase;
+}

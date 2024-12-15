@@ -392,6 +392,11 @@ header .logo {
   margin: 0 auto;
 }
 
+.work-card:hover .work-image img,
+.work-image img:hover { 
+   transform:none !important ;
+}
+
 .work-overlay {
   position: absolute;
   top: 0;
